@@ -15,9 +15,9 @@ const Header = () => {
           <span className="logo-text">CodePrep AI</span>
         </div>
         <ul className="nav-links">
-          <li><a href="#features">Interview Copilot</a></li>
-          <li><a href="#coding">Coding Challenges</a></li>
-          <li><a href="#mock">Mock Interviews</a></li>
+          <li><a href="#resume-builder">Resume Builder</a></li>
+          <li><a href="#interview-copilot">Interview Copilot</a></li>
+          <li><a href="#coding-pilot">Coding Pilot</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li className="dropdown">
             <a href="#resources">Resources ▾</a>
