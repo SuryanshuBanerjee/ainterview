@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const LogoIcon = () => (
   <svg className="logo-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -7,25 +9,52 @@ const LogoIcon = () => (
 );
 
 const Header = () => {
+  const { token, logout } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+  };
+
+  const isLandingPage = location.pathname === '/';
+
   return (
     <header className="header">
       <nav className="nav">
         <div className="nav-brand">
-          <LogoIcon />
-          <span className="logo-text">CodePrep AI</span>
+          <Link to="/">
+            <LogoIcon />
+            <span className="logo-text">AI Interview</span>
+          </Link>
         </div>
-        <ul className="nav-links">
-          <li><a href="#resume-builder">Resume Builder</a></li>
-          <li><a href="#interview-copilot">Interview Copilot</a></li>
-          <li><a href="#coding-pilot">Coding Pilot</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li className="dropdown">
-            <a href="#resources">Resources ▾</a>
-          </li>
-        </ul>
+        {token ? (
+          <ul className="nav-links">
+            <li><Link to="/dashboard">Dashboard</Link></li>
+            <li><Link to="/resume-analyzer">Resume Analyzer</Link></li>
+            <li><Link to="/interview-prep">Interview Prep</Link></li>
+            <li><Link to="/dsa-quiz">DSA Quiz</Link></li>
+            <li><Link to="/placements">Placements</Link></li>
+            <li><Link to="/profile">Profile</Link></li>
+          </ul>
+        ) : isLandingPage ? (
+          <ul className="nav-links">
+            <li><a href="#resume-builder">Resume Builder</a></li>
+            <li><a href="#interview-copilot">Interview Copilot</a></li>
+            <li><a href="#coding-pilot">Coding Pilot</a></li>
+            <li><a href="#placements">Placements</a></li>
+          </ul>
+        ) : null}
         <div className="nav-actions">
-          <button className="btn-secondary">Sign In</button>
-          <button className="btn-primary">Get Started →</button>
+          {token ? (
+            <button className="btn-secondary" onClick={handleLogout}>Logout</button>
+          ) : (
+            <>
+              <Link to="/login" className="btn-secondary">Sign In</Link>
+              <Link to="/register" className="btn-primary">Get Started →</Link>
+            </>
+          )}
         </div>
       </nav>
     </header>
