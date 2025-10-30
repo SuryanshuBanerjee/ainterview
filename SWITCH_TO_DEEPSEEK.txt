@@ -1,0 +1,98 @@
+╔════════════════════════════════════════════════════════════════╗
+║                                                                ║
+║        🎯 SWITCHED TO DEEPSEEK - NO MORE RATE LIMITS! 🎯      ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ WHAT CHANGED:
+
+Your app now uses DeepSeek AI instead of OpenAI because:
+  • OpenAI has strict rate limits (3 requests/minute)
+  • DeepSeek has MUCH higher limits
+  • DeepSeek is cheaper and faster
+  • Uses same API format (no code changes needed!)
+
+═══════════════════════════════════════════════════════════════════
+
+🔑 GET YOUR FREE DEEPSEEK API KEY:
+
+1. Go to: https://platform.deepseek.com/api_keys
+
+2. Sign up (free account)
+
+3. Click "Create API Key"
+
+4. Copy the key (starts with sk-...)
+
+5. Open backend\.env and paste it:
+
+   DEEPSEEK_API_KEY=sk-your-key-here
+
+6. Restart backend:
+   cd backend
+   npm run dev
+
+═══════════════════════════════════════════════════════════════════
+
+📋 QUICK CHECKLIST:
+
+[ ] Get DeepSeek API key from https://platform.deepseek.com/api_keys
+[ ] Add key to backend\.env (replace "your_deepseek_api_key_here")
+[ ] Restart backend server
+[ ] See "✅ DeepSeek AI initialized" in console
+[ ] Test AI interview - no more rate limit errors!
+
+═══════════════════════════════════════════════════════════════════
+
+💡 BENEFITS:
+
+Before (OpenAI):
+  ❌ 3 requests per minute limit
+  ❌ Rate limit errors
+  ❌ Slow responses
+  ❌ Expensive
+
+After (DeepSeek):
+  ✅ Much higher limits
+  ✅ No rate limit errors
+  ✅ Fast responses
+  ✅ Very affordable
+
+═══════════════════════════════════════════════════════════════════
+
+📚 DETAILED GUIDE:
+
+Check SETUP_DEEPSEEK.md for:
+  • Step-by-step instructions
+  • Pricing information
+  • Troubleshooting tips
+  • API usage examples
+
+═══════════════════════════════════════════════════════════════════
+
+🚀 AFTER SETUP, YOU CAN:
+
+  • Run unlimited AI interviews
+  • No waiting between requests
+  • Get instant feedback
+  • Use all AI features freely
+
+═══════════════════════════════════════════════════════════════════
+
+🎁 DEEPSEEK IS FREE TO START!
+
+Free tier includes:
+  • Thousands of requests per month
+  • All models available
+  • Same quality as before
+  • No credit card needed to start
+
+═══════════════════════════════════════════════════════════════════
+
+⚡ NEXT STEP:
+
+Get your API key NOW: https://platform.deepseek.com/api_keys
+
+It takes less than 2 minutes! 🎉
+
+═══════════════════════════════════════════════════════════════════

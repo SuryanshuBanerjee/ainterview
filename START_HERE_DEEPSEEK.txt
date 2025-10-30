@@ -1,0 +1,60 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║              ⚡ DEEPSEEK SETUP - SUPER QUICK! ⚡                 ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+🎯 WHY THE CHANGE?
+
+  OpenAI:  ❌ 3 requests/minute (too slow!)
+  DeepSeek: ✅ Thousands/day (unlimited practice!)
+
+═══════════════════════════════════════════════════════════════════
+
+⚡ 2-MINUTE SETUP:
+
+1️⃣  GET API KEY:
+    → Go to: https://platform.deepseek.com/api_keys
+    → Sign up (free, no credit card)
+    → Click "Create API Key"
+    → Copy the key (starts with sk-...)
+
+2️⃣  ADD TO .ENV:
+    → Open: backend\.env
+    → Find: DEEPSEEK_API_KEY=your_deepseek_api_key_here
+    → Paste your key there
+    → Save file
+
+3️⃣  RESTART:
+    cd backend
+    npm run dev
+
+    Look for: ✅ DeepSeek AI initialized
+
+4️⃣  DONE! 🎉
+
+═══════════════════════════════════════════════════════════════════
+
+✅ WHAT YOU GET:
+
+  ✅ Unlimited AI interviews
+  ✅ No rate limit errors
+  ✅ Faster responses
+  ✅ Same quality
+  ✅ Much cheaper
+
+═══════════════════════════════════════════════════════════════════
+
+📚 NEED MORE HELP?
+
+  • Detailed guide: SETUP_DEEPSEEK.md
+  • Full summary: FINAL_SETUP_SUMMARY.md
+  • All improvements: IMPROVEMENTS_MADE.md
+
+═══════════════════════════════════════════════════════════════════
+
+🔗 GET YOUR KEY NOW:
+
+  https://platform.deepseek.com/api_keys
+
+═══════════════════════════════════════════════════════════════════
